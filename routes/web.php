@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
 
-Route::get('/user',function() {
-    return view('user');
-}) ->name('PersonalInformation');
+
+Route::get('/main', function(){
+    return view('main');
+})->name('main');
+
