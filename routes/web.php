@@ -19,3 +19,14 @@ Route::get('/main', function(){
     return view('main');
 })->name('main');
 
+Route::get('/word', function(){
+    return view('word');
+})->name('word');
+
+Route::get('/aboutMe', function(){
+    return view('aboutMe');
+})->name('aboutMe');
+
+Route::get('/contactUs', function(){
+    return view('contactUs');
+})->name('contactUs');
