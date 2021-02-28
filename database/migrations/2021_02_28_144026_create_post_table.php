@@ -21,7 +21,7 @@ class CreatePostTable extends Migration
         });
     }
 
-    /**gi
+    /**git
      * Reverse the migrations.
      *
      * @return void
