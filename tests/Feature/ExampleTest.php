@@ -30,7 +30,7 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/post/100');
 
-        $response->assertStatus(200);
+        $response->assertStatus(404);
     }
 
     public function test_post_response()
