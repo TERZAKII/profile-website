@@ -32,11 +32,10 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(404);
     }
-
-    public function test_post_response()
+    protected $items=[];
+    public function test_post_constructor($items = [])
     {
-        $response = $this->get('/post/1');
-
-        $response->assertViewHas('post');
+        $this->$items=$items;
     }
+    
 }
