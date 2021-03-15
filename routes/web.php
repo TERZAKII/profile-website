@@ -44,11 +44,17 @@ Route::get('/post/create',function(){
 });
 
 
-// Route::get('/post',function(){
-//     $post = Post::find(1);
-//     // return $post->title;
-//     return $post;
-// });
+Route::get('/post',function(){
+    $post = Post::find(1);
+    // return $post->title;
+    return $post;
+});
 
 
-Route::get('/post',[BlogController::class,'index']);
+Route::get('/blog/index',[BlogController::class,'index']);
+
+Route::get('/blog/create', function(){
+    return view('blog.create');
+}); 
+
+Route::post('/blog/create',[BlogController::class,'store'])->name('add_post');
