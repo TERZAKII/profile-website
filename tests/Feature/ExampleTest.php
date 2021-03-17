@@ -37,5 +37,5 @@ class ExampleTest extends TestCase
     {
         $this->$items=$items;
     }
-    
+   
 }

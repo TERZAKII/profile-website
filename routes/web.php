@@ -45,9 +45,9 @@ Route::get('/post/create',function(){
 
 
 Route::get('/post',function(){
-    $post = Post::find(1);
-    // return $post->title;
-    return $post;
+    $post = Post::find(1);//find(ID)
+    return $post->title;
+    // return $post;
 });
 
 
