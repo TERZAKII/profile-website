@@ -32,10 +32,6 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(404);
     }
-    protected $items=[];
-    public function test_post_constructor($items = [])
-    {
-        $this->$items=$items;
-    }
+    
    
 }
