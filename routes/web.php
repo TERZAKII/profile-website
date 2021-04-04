@@ -8,6 +8,7 @@ use App\Models\Post;
 use App\Models\Form;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadFileController;
+use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,3 +70,5 @@ Route::get('post/{id}',[BlogController::class,'getPost']);
 //Lab8
 Route::post('/upload', [UploadFileController::class, 'uploadsubmit']);
 Route::get('/upload', [UploadFileController::class, 'uploadform']);
+//Lab8.2
+Route::get('/send', [MailController::class, 'send']);
