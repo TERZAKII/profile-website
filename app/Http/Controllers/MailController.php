@@ -8,6 +8,7 @@ use App\Mail\DemoMail;
 
 class MailController extends Controller
 {
+    //send function
     public function send() {
         $demo = new \stdClass();
         $demo -> receiver = 'Kuanysh';
