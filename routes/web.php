@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\DB;
 
 
 use App\Models\Post;
+use App\Models\Form;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UploadFileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,7 +47,7 @@ Route::get('/post/create',function(){
 
 
 Route::get('/post',function(){
-    $post = Post::find(1);//find(ID)
+    $post = Post::find(2);//find(ID)
     return $post->title;
     // return $post;
 });
@@ -61,3 +63,9 @@ Route::post('/blog/create',[BlogController::class,'store'])->name('add_post');
 
 
 Route::get('post/{id}',[BlogController::class,'getPost']);
+
+
+
+//Lab8
+Route::post('/upload', [UploadFileController::class, 'uploadsubmit']);
+Route::get('/upload', [UploadFileController::class, 'uploadform']);
