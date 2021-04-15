@@ -14,5 +14,11 @@ class Localization
      * @param  \Closure  $next
      * @return mixed
      */
-    
+    public function handle(Request $request, Closure $next)
+    {
+        if(session()->has('locale')){
+            App::setlocale(session()->get('locale'));
+        }
+        return $next($request);
+    }
 }
