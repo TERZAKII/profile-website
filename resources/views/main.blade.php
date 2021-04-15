@@ -52,22 +52,21 @@ justify-content: space-around;
 <div class = "pp" style="background-color:brown;padding:10px">
 <ul>
 <li><a href="{{ Route('word')}}"><img alt="SK" src="https://www.vippng.com/png/full/32-322319_sk-gaming-sk-gaming-logo-png.png" width="30" height="30"></a></li>
-<li><a href="{{ Route('main')}}" >Home page</a></li>
-<li><a href="{{ Route('aboutMe')}}">About me</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Course Shedule</a></li>
-<li><a href="{{ Route('contactUs')}}">Contact</a></li>
+<li><a href="{{ Route('main')}}" >{{ __("Home Page")}}</a></li>
+<li><a href="{{ Route('aboutMe')}}">{{ __('lang.About Me')}}</a></li>
+<li><a href="#">{{ __('lang.Services')}}</a></li>
+<li><a href="#">{{ __('lang.Course Shedule')}}</a></li>
+<li><a href="{{ Route('contactUs')}}">{{ __('lang.Contact')}}</a></li>
 </ul>
 </div>
 
 
-
 <div class="body">
-    <h1 style="text-align:center;font-size:50px">My Portfolio</h1>
+    <h1 style="text-align:center;font-size:50px">{{ __('lang.My Portfolio')}}</h1>
     <div class="iu">
     <img id="iu" src="https://webitfactory.io/wp-content/uploads/2019/11/ui-ux.png" alt="">
-    <p id ="ux"style="font-size:22px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam mollitia atque, repellendus, sed nostrum enim quam ab officiis pariatur perferendis, blanditiis deserunt quaerat iusto inventore nulla? Enim sint laborum eum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam mollitia atque, repellendus, sed nostrum enim quam ab officiis pariatur perferendis, blanditiis deserunt quaerat iusto inventore nulla? Enim sint laborum eum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam mollitia atque, repellendus, sed nostrum enim quam ab officiis pariatur perferendis, blanditiis deserunt quaerat iusto inventore nulla? Enim sint laborum eum!</p>
-    <h1 class ="ux">UI/UX Design</h1>
+    <p id ="ux"style="font-size:22px;">{{ __('lang.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam mollitia atque, repellendus, sed nostrum enim quam ab officiis pariatur perferendis, blanditiis deserunt quaerat iusto inventore nulla? Enim sint laborum eum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam mollitia atque, repellendus, sed nostrum enim quam ab officiis pariatur perferendis, blanditiis deserunt quaerat iusto inventore nulla? Enim sint laborum eum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam mollitia atque, repellendus, sed nostrum enim quam ab officiis pariatur perferendis, blanditiis deserunt quaerat iusto inventore nulla? Enim sint laborum eum!')}}</p>
+    <h1 class ="ux">{{ __('lang.UI/UX Design')}}</h1>
     </div>
     <div class="arch">
     <img src="" alt="">

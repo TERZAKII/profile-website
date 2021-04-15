@@ -72,3 +72,9 @@ Route::post('/upload', [UploadFileController::class, 'uploadsubmit']);
 Route::get('/upload', [UploadFileController::class, 'uploadform']);
 //Lab8.2
 Route::get('/send', [MailController::class, 'send']);
+
+//Lab9(Localization)
+Route::get('/{lang}',function($lang){
+    App::setlocale($lang);
+    return view('main');
+});
