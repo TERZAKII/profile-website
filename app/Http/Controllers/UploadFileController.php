@@ -12,27 +12,32 @@ class UploadFileController extends Controller
 {
 
     public function uploadform() {
-        return view('fileUpload.file_upload');
+        return view('Project');
     }
     public function uploadsubmit(Request $request) {
         
         $request->validate([
             'name' => 'required',
             'surname' => 'required',
-            'mail' => 'required',
-            'image' => 'required|mimes:jpg,png,jpeg,gif|max:5048'
+            'telephone' => 'required',
+            'city' => 'required',
+            'street' => 'required',
+            'checkList' => 'required|mimes:jpg,png,jpeg,gif|max:5048'
         ]);
         
-        $newName = time() . '-' . $request -> name . '.' . $request -> image -> extension();
+        $newName = time() . '-' . $request -> name . '.' . $request -> checkList -> extension();
 
-        $request -> image -> move(public_path('uploads'), $newName);
+        $request -> checkList -> move(public_path('uploads'), $newName);
 
+        
         
         Form::create([
             'name' => $request->name,
             'surname' => $request->surname,
-            'mail' => $request->mail,
-            'file' => $newName
+            'telephone' => $request->telephone,
+            'city' => $request->city,
+            'street' => $request->street,
+            'checkList' => $newName
         ]);
 
         return redirect('/upload');

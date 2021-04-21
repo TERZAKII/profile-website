@@ -9,7 +9,7 @@ body{
 }
 
 a{
-    text-decoration: none;
+text-decoration: none;
 color:white;
 font-size:25px;
 font-weight:900;
@@ -35,7 +35,7 @@ justify-content: space-around;
     float:right;
     text-align: center;
     left: 250px;
-    margin-top: -25px;
+    margin-top: -30px;
 }
 #ux{
     position:relative;
@@ -48,8 +48,10 @@ justify-content: space-around;
 <title>Task_1</title>
 
 </head>
-<body>
-<div class = "pp" style="background-color:brown;padding:10px">
+<body style="background-color:yellow">
+@extends('layout')
+@section('content')
+<div class = "pp" style="background-color:brown;padding:15px">
 <ul>
 <li><a href="{{ Route('word')}}"><img alt="SK" src="https://www.vippng.com/png/full/32-322319_sk-gaming-sk-gaming-logo-png.png" width="30" height="30"></a></li>
 <li><a href="{{ Route('main')}}" >{{ __("Home Page")}}</a></li>
@@ -73,6 +75,6 @@ justify-content: space-around;
     </div>
     
 </div>
-
+@endsection
 </body>
 </html>

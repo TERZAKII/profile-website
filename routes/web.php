@@ -9,6 +9,8 @@ use App\Models\Form;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadFileController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\LocalizationController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -66,15 +68,24 @@ Route::post('/blog/create',[BlogController::class,'store'])->name('add_post');
 Route::get('post/{id}',[BlogController::class,'getPost']);
 
 
-
 //Lab8
 Route::post('/upload', [UploadFileController::class, 'uploadsubmit']);
 Route::get('/upload', [UploadFileController::class, 'uploadform']);
+
 //Lab8.2
 Route::get('/send', [MailController::class, 'send']);
 
 //Lab9(Localization)
 Route::get('/{lang}',function($lang){
     App::setlocale($lang);
-    return view('main');
+    return view('project');
 });
+
+//Lab9(2nd way:Localization)
+// Route::get('/{lang}',[LocalizationController::class, 'index']);
+
+//Project
+Route::get('/Project', function(){
+    return view('Project');
+}); 
+Route::post('/Project',[BlogController::class,'store'])->name('add_post');

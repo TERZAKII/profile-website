@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Form extends Model
 {
-    protected $fillable = ['name', 'surname', 'mail', 'file'];
-    protected $table = 'forms';
+    protected $fillable = ['name', 'surname', 'telephone', 'city','street','checkList'];
+    protected $table = 'cart';
     use HasFactory;
 }

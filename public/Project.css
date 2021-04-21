@@ -1,0 +1,1067 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+/* Header */
+
+.header{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    background-color:hsl(0, 0%, 15%);
+    color: #fff;
+    font-size: 20px;
+    padding:10px 200px;
+    position: fixed;
+    z-index: 1;
+}
+#header:hover{
+    text-decoration: underline;
+}
+.header>div:hover{
+    color: burlywood;
+}
+#language{
+    text-decoration: none;
+    color:white;
+  }
+  #language:hover{
+    text-decoration: underline;
+    color: burlywood;
+
+}
+
+#cartBtn{
+    margin-top:500px;
+    text-align: left;
+}
+/* button Order */
+
+.order{
+    margin-left: 48%;
+    margin-top: -200px;
+    position: absolute;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0,0.1);
+    color: rgb(255, 255, 255);
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+.order:hover{
+    background-color: rgb(107, 100, 100);
+}
+                                                        /* Order form */
+.form_order{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.form-content_order{
+    background-color: white;
+    height: 600px;
+    width: 1000px;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+.brand{
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.laptops{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+#choosebrand{
+    font-size: 45px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+/* AddToCart */
+.form_cart{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.form-content_cart{
+    background-color: white;
+    height: 600px;
+    width: 1000px;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Checkout */
+.form_checkout{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+}
+.form-content_checkout{
+    background-color: white;
+    height: 600px;
+    width: 1000px;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Macbook */
+.laptop{
+    cursor: pointer;
+    display: block;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    filter: grayscale(100%);
+    margin: 12px;
+}
+#laptopImg{
+    width: 100%;
+    height: 180px;
+    filter: blur(2px);
+    /* -webkit-filter: grayscale(100); */
+}
+.laptop:hover{
+    filter: grayscale(0);
+}
+#laptopImg:hover{
+    filter: blur(0);
+    transform: scale(1.1);
+}
+
+.laptopWord{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+/* After choosing brand */
+.macbook,.acer,.asus,.lenovo,.dell,.hp{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.laptopName1{
+    cursor: pointer;
+    display: block;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    filter: grayscale(100%);
+    margin:  auto auto;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+}
+.laptopName2{
+    cursor: pointer;
+    display: block;
+    width: 45%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    filter: grayscale(100%);
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.laptopName{
+    cursor: pointer;
+    display: block;
+    width: 35%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    filter: grayscale(100%);
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+#laptopNameImg1{
+    width: 100%;
+    height: 230px;
+    filter: blur(2px);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#laptopNameImg2{
+    width: 100%;
+    height: 240px;
+    filter: blur(2px);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#laptopNameImg{
+    width: 100%;
+    height: 300px;
+    filter: blur(2px);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* -webkit-filter: blur(1.75px); */
+}
+.laptopName1:hover,.laptopName:hover,.laptopName2:hover{
+    filter: grayscale(0);
+}
+#laptopNameImg:hover,#laptopNameImg1:hover,#laptopNameImg2:hover{
+    filter: blur(0);
+    transform: scale(1.1);
+}
+.laptopNameWord{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+/* After choosing brands, after than choosing type */
+.macType,.acerType,.asusType,.lenovoType,.dellType,.hpType{
+    display: flex;
+    flex-wrap: wrap;
+}
+.macbookAir,.macbookPro,.acerNitro,.acerSwift,.acerPredator,.acerAspire,.asusZenbook,.asusVivobook,.asusROG,.asusChromebook{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.lenovoLegion,.lenovoYoga,.lenovoIdeaPad,.lenovoThinkPad,.dellXPS,.dellVostro,.dellLatitude,.dellGSeries,.hpSpectre,.hpPavilion,.hpEnvy,.hpElitebook{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.macbookAirWords{
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+#brandPng1{
+    width: 90%;
+    height: 380px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#brandPng2{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.forblockcost{
+    width: 100%;
+    height: 300px;
+    float: left;
+    display: block;
+}
+.cartbtn{
+    position: absolute;
+    bottom: 50px;
+    font-size: 35px;
+    font-weight: 800;
+}
+#back_icon1,#back_icon2{
+    display: none;
+    cursor: pointer;
+    width: 45px;
+    height:35px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius:10px;
+}
+/* main  */
+
+#b_image{
+    width: 100%;
+    height: auto;
+}
+#img_main{
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* Laptops */
+#hrd{
+    margin: 0;
+    border: 0.1px solid black;
+}
+#hrs{
+    margin-top: -23px;
+    margin-left: -40px;
+    margin-right: -40px;
+    border: 0.1px solid gray;
+}
+
+
+
+/* Laptop img,words */
+
+#a_header{
+    color: white;
+}
+#a_header:hover{
+    text-decoration: none;
+}
+
+/* LOGIN button */
+
+#sign_in_button{
+    color: black;
+    position: absolute;
+    top: 7px;
+    right: 107px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 1;
+    position: fixed;
+}   
+.main_bet{
+    margin:0 auto;
+    position: relative;
+}
+
+/* LogIn form */
+
+.form{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    z-index: 1;
+}
+.form-content{
+    background-color: white;
+    height: 500px;
+    width: 800px;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+}
+#creater{
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#creater:hover{
+    color: blue;
+}
+.dspl{
+    display: flex;
+    justify-content: space-around;
+}
+#right{
+    margin-top: 50px;
+    text-align: center;
+}
+#lgIn{
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Close icon */
+
+#close_icon{
+    cursor: pointer;
+    width: 25px;
+    height:25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius:10px;
+}
+
+/* Input type */
+
+.input{
+    display: block;
+    padding: 6px;
+    border-radius: 10px;
+    margin:15px auto;
+    width: 100%;
+    margin-top: 5px;
+}
+#_username,#_email,#_password,#telephone{
+    background-color: gold;
+}
+
+/* Avatar */
+
+#avatar{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 4px;
+    right: 107px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+}
+#user_name{
+    color: black;
+    display: inline;
+    font-size:15px;
+    text-decoration: none;
+}
+#_email,#repeatPassword{
+    display: none;
+}
+#ava_icon{
+    margin-left: 0;
+    width: 25px;
+    height: 25px;
+    display: inline;
+    border-radius: 10px;
+}
+#lgout{
+    margin: 0;
+}
+#lgIn{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.remember{
+    margin-left: -65px;
+}
+#log_in{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* signUp image */
+
+#signUp{
+    margin-left: 20px;
+    width: 300px;
+    height: auto;
+}
+.prof{
+    display: flex;
+}
+#profile{
+    margin-top: 10px;
+    margin-left: -30px;
+    font-size: 20px;
+    text-decoration: underline;
+    
+}
+.pass_1{
+    display: none;
+}
+#pass1{
+    margin-top: 10px;
+    margin-left: -30px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.pass_2{
+    display: none;
+}
+#pass2{
+    margin-top: 10px;
+    margin-left: -30px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* Overview */
+.overview_{
+    margin-top: -80px;
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+    display: none;
+}
+#over_{
+    width: 50%;
+    height: auto;
+    margin: 60px 15px;
+
+}
+#over_words{
+    margin: auto;
+    padding: 50px 60px;
+    text-align: justify;
+    font-weight: 20px;
+}
+#overview_img{
+    margin: 0 auto;
+    margin-top: -20px;
+    display: none;
+    width: 50%;
+}
+
+/* Best of Best */
+
+.best{
+    display: none;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+.best1,.best2,.best3,.best4,.best5{
+    display: flex;
+    margin: 0 auto;
+}
+.bestWords{
+    background-color: rgb(0, 0, 0,0.1);
+    padding: 0 40px;
+    margin: 60px 40px;
+    display: block;
+}
+#for{
+    font-size: 20px;
+}
+.forclass{
+    background-color: rgb(0, 0, 0,0.2);
+    width: fit-content;
+    padding: 1em;
+    margin-bottom:  30px;
+}
+.plus{
+    margin-top: 20px;
+}
+.plusFor{
+    margin-top: 10px;
+    font-size: 17px;
+}
+#bestImg{
+    width: 800px;
+    height: auto;;
+}
+
+/* Videos */
+
+.videos{
+    display: none;
+    margin-top: -33px;
+}
+.videoImg{
+    display: flex;
+    margin-top: 10px;
+}
+.pVideoWords{
+    display: block;
+}
+.videos1,.videos2,.videos3,.videos4,.videos5{
+    display: flex;
+}
+.videoWords{
+    width: 590px;
+    display: block;
+    margin: 30px  70px;
+    padding: 10px 30px ;
+    background-color: rgb(0, 0, 0,0.1);
+}
+
+#vw{
+    margin-left: 35px;
+}
+#vid{
+    width:900px;
+    height:500px;
+}
+/* Accessories */
+.accessories{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.acces{
+    border: 1px solid black;
+    display: block; 
+    width: 287px;
+    height: 400px;
+    margin: 25px;
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+
+}
+.acces:hover{
+    border: 2.5px solid transparent;
+    border-image: url(pngtree-golden-border-warm-color-border-frame-picture-frame-gold-png-image_3819694.jpg) 30% round;
+}
+#mousePic{
+    width: 100%;
+    height: 230px;
+}
+.word{
+    padding: 10px;
+}
+.btns:active {
+    transform: translateY(3px);
+}
+
+/* Follow Us */
+
+.follow_us{
+    text-align: center;
+}
+.flw{
+    margin-top: 100px;
+    font-weight: 700;
+}
+#suret{
+    width: 4.5%;
+}
+#about_{
+    display: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+/* Contact Us */
+
+.contact_us{
+    background-color: hsl(0, 0%, 15%);
+    display: flex;
+}
+
+.contactUsWords{
+    margin: 0 auto;
+    display: block;
+    color: white;
+    font-size: 200%;
+    margin-left: 50px;
+}
+.c-us{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Phone icon */
+
+#phone{
+    display: flex;
+}
+#phoneNumbers{
+    display: block;
+    margin-left: 10px;
+}
+#spans{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+/* Map */
+
+#map{
+    margin: 20px 110px 20px 0px  ;
+    width: 32em;
+    height:31em;
+}  
+
+/* Add to Card */
+
+#card{
+    position: absolute;
+    top: 8px;
+    right: 47px;
+    width: 30px;
+    height: auto;
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+}
+
+/* About Us */
+#aboutUswords1,#aboutUswords3,#aboutUswords5,#aboutUswords7{
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto 5%;
+    text-align: justify;
+    padding: 55px;
+    color: white;
+    background-color: rgb(0, 0, 0,0.8);
+    box-shadow: 20px 20px rgb(0,0,0,0.25);
+}
+#about_{
+    display: none;
+}
+#aboutUswords2,#aboutUswords4,#aboutUswords6{
+    text-align: center;
+    display: none;
+    color: white;
+    background-color: rgba(245, 0, 0, 0.8);
+    margin: auto 10%;
+    margin-top: 80px;
+    font-size: 75px;
+    font-weight: 900;
+    box-shadow:  -5px -5px rgba(0, 0, 0, 0.25);
+}
+/* After clicking Add To Cart */
+.form_carts{
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    z-index: 3;
+}
+.form-content_carts{
+    background-color: white;
+    height: 200px;
+    width: 380px;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 3;
+}
+.forbtn{
+    display: flex;
+    justify-content: space-around;
+}
+/* Media */
+
+.label11{
+    width: 100%;
+    display: none;
+    background-color: hsl(0, 0%, 15%);
+    font-size: 33px;
+    color: white;
+    padding-left: 10px;
+    margin: 0;
+
+}
+
+#toggle{
+    display: none;
+}
+.toggleButton{
+    display: none;
+}
+#ssss{
+    display: none;
+}
+
+/* MEDIA */
+
+@media(max-width: 1000px) {
+    /* ContactUS */
+    #laptopNameImg2{
+        width: 100%;
+        height: 70px;
+        display: flex;
+    }
+    #laptopNameImg{
+        width: 100%;
+        height: 100%;
+
+    }
+    .hp>div>#laptopNameImg{
+        margin: 15px 0 15px 0;
+    }
+    #laptopNameImg1{
+        width: 100%;
+        height: 100%;
+    }
+    .acer,.asus,.hp{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .lenovo,.dell{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #brandPng1,#brandPng2{
+        width: 100%;
+        height: auto;
+    }
+    .macbookAirWords{
+        font-size: 8px;
+    }
+    .macbookAirWords>h1{
+        font-size: 15px;
+    }
+    #brandPng1{
+        margin-top: 100px;
+    }
+    #brandPng2{
+        margin-top: 50px;
+    }
+    .contact_us{
+        background-color: hsl(0, 0%, 15%);
+        display: block;
+        margin: 0 auto;
+
+    }
+    .c-us{
+        color: white;
+        margin: 10px auto;
+        text-decoration: underline;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .contactUsWords{
+        margin: 0 auto;
+        display: block;
+        color: white;
+        font-size: 115%;
+        margin-left: 90px;
+    }
+    #phoneNumbers{
+        margin-top: 15px;
+    }
+    /* Map */
+    #map{
+        margin: 0 auto   ;
+        width: 22em;
+        height:22em;
+    }
+     /*AddToCardIcon  */
+    #card{
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            width: 35px;
+            height: auto;
+            border-radius: 50%;
+            position: fixed;
+            z-index: 2;
+    }
+    /* Order button */
+    .order{
+        font-size: 10px;
+        bottom: 20%;
+        right: 44.5%;
+    }
+    
+    #sign_in_button{
+        margin-right: -40px;
+        margin-top: -1px;
+        font-size: 15px;
+        z-index:    2;
+    }
+    
+    .header{
+        display: block;
+        font-size: 20px;
+        position: fixed;
+        width: 100%;
+        padding: 60px 10px 0px 10px;
+        z-index: 1;
+
+    }
+    .header div{
+        border-top: 1px solid grey;
+        padding: 10px 0;
+    }
+    #signUp{
+       display: none;
+    }
+    #right{
+        margin-top: 85px;
+        margin-left: 60px;
+        width: 150px;
+        font-size: 15px;
+    }
+    #lgIn{
+        margin-top: 55px;
+        font-size: 35px;
+    }
+    .remember{
+        margin-left: -40px;
+    }
+    #toggle:checked+.header{
+        display: none;
+    }
+    .form{
+        justify-content: center;
+    }
+    .form-content{
+        width: 350px;
+        height: 550px;
+        text-align: center;
+        display: block;
+        margin-top: 60px;
+    }
+    .toggleButton{
+        display: block;
+    }
+    
+    .label11{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        z-index: 2;
+    }
+    .dspl{
+        display: block;
+    }
+    #creater{
+       display: none;
+   }
+    #ssss{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 50px;
+        display: block;
+        cursor: pointer;
+    }
+    #ssss:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+   .overview_{
+       margin: 0 auto;
+       margin-top: 40px;
+   }
+   #over_{
+       width: 90%;
+    margin-left: 25px;
+   }
+   #bestImg{
+       margin-top: 50px;
+       width: 100%;
+       height: 400px;
+   }
+   /* Video */
+   .videos{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   }
+   #vid{
+       width: 350px;
+       height: 300px;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+
+   }
+   .videos1,.videos2,.videos3,.videos4,.videos5{
+       margin-bottom: 100px;
+   }
+   .videoWords{
+       width: 350px;
+       margin: 0 auto;
+   }
+   .form_order{
+    justify-content: center;
+    }
+    .form-content_order{
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    display: block;
+}
+    .form_cart{
+    justify-content: center;
+    }
+    .form-content_cart{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    display: block;
+}
+
+    .laptopWord,.laptopNameWord{
+        font-size: 15px;
+}
+    #choosebrand{
+        font-size: 25px;
+}
+    #laptopImg{
+        width: 100%;
+        height: 100%;
+
+    }
+   #aboutUswords1,#aboutUswords2,#aboutUswords3,#aboutUswords4,#aboutUswords5,#aboutUswords6,#aboutUswords7{
+       font-size: 15px;
+   }
+   #avatar{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 4px;
+    right: 70px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+}
+}
+
+ 
