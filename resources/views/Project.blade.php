@@ -86,7 +86,7 @@
                                                       <!-- Checkout -->
   <div class="form_checkout">
   <div class="form-content_checkout">
-  <form method="POST" action="/upload" enctype="multipart/form-data">
+  <form method="POST" action="{{route('add-cart')}}"  enctype="multipart/form-data">
   @csrf
   <img onclick="Close_cart()" id="close_icon" src="pict--close-button---hover-toolbar-control-elements---vector-stencils-library.png--diagram-flowchart-example.png" alt="close icon">
     <input class="form-control" type="text" name="name" placeholder="Name" aria-label="default input example">
@@ -94,11 +94,11 @@
     <input class="form-control" type="phone" name="telephone" placeholder="Phone number" aria-label="default input example">
     <select class="form-select" name="city" aria-label="Default select example">
       <option selected>Select your city</option>
-      <option value="1">Nur-Sultan</option>
-      <option value="2">Almaty</option>
-      <option value="3">Shymkent</option>
-      <option value="4">Aktobe</option>
-      <option value="4">Turkistan</option>
+      <option >Nur-Sultan</option>
+      <option >Almaty</option>
+      <option >Shymkent</option>
+      <option >Aktobe</option>
+      <option >Turkistan</option>
     </select>
     <input class="form-control" type="text" name="street" placeholder="Street" aria-label="default input example">
     <div class="mb-3">
@@ -109,8 +109,11 @@
       <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-    <button onclick="sendMessage()" class="btn btn-primary" type="submit">Send</button>
+    <button onclick="sendMessage()" class="btn btn-primary" type="submit">SendToDatabase</button>
   </form>
+  <form action="{{route('sendMessage')}}">
+    <button onclick="sendMessage()" class="btn btn-primary" type="submit">SendMessage</button>
+    </form>
   </div>
 </div>
                                                 <!--Login form-->

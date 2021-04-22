@@ -6,10 +6,12 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
 use App\Models\Form;
+use App\Models\Cart;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadFileController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\LocalizationController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,15 +71,15 @@ Route::get('post/{id}',[BlogController::class,'getPost']);
 
 
 //Lab8
-Route::post('/upload', [UploadFileController::class, 'uploadsubmit']);
-Route::get('/upload', [UploadFileController::class, 'uploadform']);
+Route::post('/upload', [CartController::class, 'index']);
+Route::get('/upload', [CartController::class, 'store']);
 
 //Lab8.2
 Route::get('/send', [MailController::class, 'send']);
 
 //Lab9(Localization)
 Route::get('/{lang}',function($lang){
-    App::setlocale($lang);
+    App::setlocale($lang);  
     return view('project');
 });
 
@@ -88,4 +90,13 @@ Route::get('/{lang}',function($lang){
 Route::get('/Project', function(){
     return view('Project');
 }); 
-Route::post('/Project',[BlogController::class,'store'])->name('add_post');
+
+
+
+Route::get('/cart/create',function(){
+    return view('Project');
+});
+
+Route::post('/cart/create',[CartController::class,'store'])->name('add-cart');
+
+Route::get('/Project/send', [MailController::class, 'send'])->name('sendMessage');
